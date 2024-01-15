@@ -1,0 +1,108 @@
+    /* 
+     CSS 파일
+     파일 전체가 <style>태그 내부라고 생각하면 됨   
+    */
+
+    
+    /* 기본 속성 선택자 */
+    div[name="name-1"] {
+        background-color: red;
+    }
+    /* div 중에 name속성을 name-1로 갖고 있는 것 선택 */
+
+    p[name="name-1"]{
+        background-color: green;
+    }
+
+
+    /* div태그의 name="2"인 것과 p태그의 name="2"인 것 모두 선택 */
+    [name="name-2"] {
+        background-color: blue;
+    }
+
+    /* 자식 선택자 */
+        /* # : id 선택자 */
+        /* parent-ul이라는 id속성을 가진 부모 태그 아래 li태그들 */
+    #parent-ul > li {
+        background-color: orange;
+    }
+
+    /* parent 아래에 li아래에 span 아래에 있기 때문에 안됨
+        바로 하위에 존재해야 함
+    parent-ul > span{
+        background-color: red;
+    } */
+
+    #parent-ul > li > span {
+        background-color: red;
+    }
+
+    /* 후손 선택자 */
+
+    #test-div p {
+        background-color: yellowgreen;
+    }
+    /* test-div id를 가진 div 태그 아래의 모든 p태그 */
+    /* div 태그 아래에 있는 다른 div 태그 또한 후손임을 알 수 있음 */
+
+
+    /* 반응 선택자 */
+    .div-cls {
+        border : 1px solid black;
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+
+        /* 아래쪽 요소와의 간격 */
+        margin-bottom: 30px;
+        
+        /* 요소의 마우스 커서가 올라오면 손가락 모양으로 변경 */
+        cursor: pointer;
+    }
+
+    #active-test:active {
+        background-color: yellow;
+    }
+
+    #hover-test:hover {
+        background-color: pink;
+        width: 230px;
+        height: 230px;
+    }
+
+    /* #hover-test요소가 변화를 일으키면 0.5초 동안 변해라 */
+    #hover-test {
+        transition-duration: 0.5s ;
+    }
+
+    #focus-test:focus {
+        background-color: red;
+    }
+
+    input[name="fruits"]:checked {
+        width: 30px;
+        height: 30px;
+
+        background-color: red;
+        /* radio, checkbox는 
+        크기를 제외한 스타일은 적용되지 않는다 */
+    }
+
+
+    #test-div2 > input:enabled {
+        background-color: lightgreen;
+    }
+    #test-div2 > input:disabled {
+        background-color: lightcoral;
+    }
+
+    /* 동위 선택자 */
+    #div1 + div {
+        background-color: olive;
+    }
+    /* div1 뒤에 있는 div 하나만 */
+
+    #div3 ~ div {
+        background-color: blue;
+    }
+    /* div3 뒤에 나오는 모든 div 태그 */
