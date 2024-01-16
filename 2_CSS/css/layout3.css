@@ -1,0 +1,97 @@
+div {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+.container-1 {
+    border: 2px dashed red;
+    position: relative
+}
+
+.first {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+}
+
+.second { 
+    width: 200px;
+    height: 200px;
+    background-color: green;
+        
+    position: absolute ;
+    /* position : absolute;를 쓰는 순간 first가 무시됨 */
+    /* 빨간색 테두리를 기준으로 붙음 */
+    top: 50px;
+    left : 50px;
+
+
+}
+
+.third {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    position:absolute;
+
+    top: 100px;
+    left:100px;
+}
+
+
+/* 요소를 영역 정가운데에 배치하기 */
+
+.container-2 {
+    border:2px solid black;
+    width: 400px;
+    height: 400px;
+
+    position : relative ; /* container가 기준점이 되도록 한다 */
+}
+
+#center {
+    position : absolute ;
+
+    border :2px solid black;
+    width : 100px ;
+    height: 100px ;
+    background-color: pink;
+    
+    /* 
+    top : 100px;
+    bottom : 100px;
+    left: 100px; 
+    */
+
+    top: 0;
+    left: 0;
+    bottom : 0;
+    right : 0;
+
+    margin:auto;
+    /* 상하좌우가 auto로 지정되면서 가운데 배치된다.
+        일종의 공식 */
+}
+
+.fixed-are {
+    width: 120px;
+
+    position : fixed;
+    /* 어디에 있어야 하나 위치 조정 해줘야 함 */
+    bottom : 50px;
+    right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
