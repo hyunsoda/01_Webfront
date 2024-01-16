@@ -12,7 +12,15 @@
     background-color: tomato;
 }
 
-.green{
+.tr4 > :first-of-type {
+    background-color: tomato;
+}
+
+.tr5 > td.red{
+    background-color: tomato;
+}
+
+.tr4 td.green, .tr5 td.green{
     background-color: green;
 }
 
