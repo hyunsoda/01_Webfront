@@ -37,7 +37,7 @@
 }
 
 #m1 {
-    margin: 100px
+    margin: 100px;
 }
 /* 서로 다른 요소의 margin이 겹칠 경우 
 더 큰 margin을 가진 요소의 값을 따른다. */
