@@ -1,0 +1,40 @@
+.container-4 {
+    display: flex;
+    border : 1px solid black;
+    width: 500px;
+    height: 300px;
+
+    flex-direction: column;
+}
+
+.head,.foot{
+    flex-basis: 20%;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.body {
+    flex-basis: 80%;
+
+    display: flex;
+}
+
+.left {
+    flex-basis: 30%;
+    background-color:aqua ;   
+    border: 1px solid black;
+}
+
+.right {
+    display: flex;
+    flex-basis: 70%;
+    background-color: orange;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.item1, .item2, .item3{
+    border: 1px solid black;
+    width: 100px;
+    height :100px;
+}

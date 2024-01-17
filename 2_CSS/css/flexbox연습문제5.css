@@ -1,0 +1,126 @@
+.container-5 {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.head{
+    background-color: yellow;
+    display: flex;
+
+    border: 1px solid black;
+    flex-basis: 30%;
+    flex-direction: rows;
+
+}
+
+.head1 {
+    flex-basis: 20%;
+    border: 1px solid black;}
+.head2 {
+    flex-basis: 40%;
+    border: 1px solid black;}
+
+.head3 {flex-basis: 40%;
+    border: 1px solid black;}
+
+
+
+.foot {
+    display: flex;
+    flex-basis: 70%;
+}
+
+.foot1{
+    display: flex;
+    background-color: skyblue;
+    flex-basis: 30%;
+    border:1px solid black;
+    flex-direction: column;
+}
+
+.left1{
+    flex-basis: 33%;
+    border:1px solid black;
+}
+.left2{
+    flex-basis: 33%;
+    border:1px solid black;
+}
+.left3{
+    flex-basis: 33%;
+    border:1px solid black;
+}
+
+
+.foot2{
+    flex-basis: 10%;
+    background-color: pink;
+}
+
+.foot3{
+    flex-basis:50% ;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.foottop{
+    flex-basis: 50%;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+.footbottom{
+    flex-basis: 50%;
+    display: flex;
+    border: 1px solid black;
+}
+
+.footbottoml{
+    background-color: green;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.b1 {
+    flex-basis: 50%;
+    border: 1px solid black;
+}
+
+.b2 {
+    flex-basis: 50%;
+    border: 1px solid black;
+}
+
+.footbottomr{
+    background-color: red;
+    flex-basis: 50%;
+}
+
+.foot4{
+    flex-basis: 10%;
+    display: flex;
+    background-color: pink;
+    flex-direction: column;
+
+}
+
+.f1{
+    flex-basis: 20%;
+    border: 1px solid black;
+}
+
+.f2{
+    flex-basis: 60%;
+    border: 1px solid black;
+}
+
+.f3{
+    flex-basis: 20%;
+    border: 1px solid black;
+}
