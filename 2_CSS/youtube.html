@@ -29,22 +29,23 @@
         <!-- 검색창 -->
         <section>
             <section class="search-area">
-                <form action="#" name="search-form">
+                <form action="#" name="search-form"></form>
+        
                     <fieldset>
                         <input type="search" id="query" name="query" placeholder="검색">
                         <button id="keyboard" class="fa-regular fa-keyboard"></button>
              
                         <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
-         
-                    </section>               
+                    </fieldset>
+                         
                     <section class="micro">
                          <button id="microphone" class="fa-solid fa-microphone"></button>
                     </section>
-                    </fieldset>    
+                        
                 <!-- 음성 -->
 
                 </form>
-             
+            </section>  
         </section>
 
         
@@ -55,10 +56,10 @@
         <!-- 설정 로그인 버튼 --> 
         <section>
             <section class="setting">
-                <button class="fa-solid fa-ellipsis-vertical"></button>
+                <button id="setting-btn"class="fa-solid fa-ellipsis-vertical"></button>
             </section>
             <section class="login-icon">
-                <button class="fa-regular fa-circle-user"> 로그인</button>
+                <button id="login-btn" class="fa-regular fa-circle-user"> 로그인</button>
             </section>
         </section>
 
@@ -69,10 +70,10 @@
 
 
     <main>
-        <section class=" content">
+        <section class="content">
             <section class="left">
                 <section class="screen">
-                    <iframe width="1400" height="750" src="https://www.youtube.com/embed/vpGrEoMQDQ8?si=O7n-YIq7yPB4k5wf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></iframe>
+                    <iframe width="1250px" height="800px" src="https://www.youtube.com/embed/vpGrEoMQDQ8?si=O7n-YIq7yPB4k5wf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></iframe>
                 </section>
 
                 <section class="title">
@@ -120,7 +121,7 @@
 
                 <section class="describe">
             
-                      <textarea rows="7" cols="200">
+                      <textarea rows="7" cols="165">
         
     조회수 20만회  1개월 전  재즈피아노(Jazz Piano)
 
@@ -145,7 +146,7 @@
                     <section></section>
                 </section>
 
-
+                <!-- 댓글 작성 -->
                 <section class="writer">
                     <section>
                         <button id="writer-btn" class="fa-regular fa-circle-user"></button>
@@ -155,26 +156,87 @@
                         <input id="writer-input" placeholder="댓글 추가...">
                     </section>
                 </section>
-
+                <!-- 댓글 리스트 1-->
                 <section class="comment">
                     <section class="comment-left">
                         <button id="comment-writer-btn" class="fa-regular fa-circle-user"></button>
                     </section>
 
-                    <section class="comment-right"></section>
+                    <section class="comment-right">
+                        <!-- 아이디 날짜 -->
+                        <section class="id-date">
+                            <section>@hyunsoda</section>
+                            <section>1개월 전</section>
+                            <section></section>
+                        </section>
+                        <!-- 댓글 본문 -->
+                        <section>피아노 소리 너무 좋고 마음이 따뜻해지는 느낌이예요~~ </section>
+                        <!-- 버튼들 -->
+                        <section class="comment-bottom">
+                            <section >
+                                <button id="comment-good" class="fa-solid fa-thumbs-up">   1</button>
+                            </section>
+                            <section>
+                                <button id="comment-bad" class="fa-solid fa-thumbs-down"></button>
+                            </section>
+                            <section><button id="recomment">답글</button></section>
+                            <section></section>
+                        </section>
+                    </section>
                 </section>
+                <!-- 댓글 리스트 1-->
+                <section class="comment">
+                    <section class="comment-left">
+                        <button id="comment-writer-btn" class="fa-regular fa-circle-user"></button>
+                    </section>
+
+                    <section class="comment-right">
+                        <!-- 아이디 날짜 -->
+                        <section class="id-date">
+                            <section>@happy</section>
+                            <section>3개월 전</section>
+                            <section></section>
+                        </section>
+                        <!-- 댓글 본문 -->
+                        <section>연주하시는 거 라이브로도 보고 싶네요🥹 항상 잘 듣고 있습니다...❤</section>
+                        <!-- 버튼들 -->
+                        <section class="comment-bottom">
+                            <section>
+                                <button id="comment-good" class="fa-solid fa-thumbs-up">   3</button>
+                            </section>
+                            <section>
+                                <button id="comment-bad" class="fa-solid fa-thumbs-down"></button>
+                            </section>
+                            <section><button id="recomment">답글</button></section>
+                            <section></section>
+                        </section>
+                    </section>
+                </section>
+            </section>
     
-    </section>
 
 
            
 
         
-            <section class="right">
-                <ul>
-                    <li><iframe width="350" height="250" src="https://www.youtube.com/embed/O3oWeOsgGpA?si=aYpAZ3lueO-BOWYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
-                    <li><iframe width="350" height="250" src="https://www.youtube.com/embed/Yu_X5ZS8HRo?si=0aSnhw9fbPLNdK7B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
-                    <li><iframe width="350" height="250" src="https://www.youtube.com/embed/AOQVMoFC5-4?si=UjWwz_o3sKXEMF9l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+        <section class="right">
+
+                <ul class="video-list">
+                    <li>
+                        <section><iframe src="https://www.youtube.com/embed/O3oWeOsgGpA?si=aYpAZ3lueO-BOWYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></section>
+                        <section class="algorithm-list">
+                           <label>
+                                <a href="https://www.youtube.com/embed/O3oWeOsgGpA?si=aYpAZ3lueO-BOWYM">
+                                <section>Playlist | 디즈니 공주, 재즈 Playlist</section>
+                                <section>기분Jazz네 | Mood is Jazz</section>
+                                <section>조회수 7만</section>
+                                </a>
+                            </label>
+                        </section>
+                    </li>
+                    <!--  width="350" height="250"-->
+                    <li><iframe  src="https://www.youtube.com/embed/Yu_X5ZS8HRo?si=0aSnhw9fbPLNdK7B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                    <li><iframe src="https://www.youtube.com/embed/AOQVMoFC5-4?si=UjWwz_o3sKXEMF9l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
                 </ul>
             </section>
         </section>
