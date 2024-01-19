@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI 평가_1</title>
+
+    <script src="https://kit.fontawesome.com/9e480ae7f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/2_CSS/css/UI평가.css">
+
+    <style>
+        @font-face {
+    font-family: 'KNUTRUTHTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KNUTRUTHTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+            * {
+            font-family: 'KNUTRUTHTTF';}
+    </style>
+</head>
+<body>
+    <main>
+        <!--상단 로그인, 로고 및 네비게이션 바 -->
+        <header>
+        
+                <!-- 상단 -->
+                <!-- <section class="top-top"> -->
+                <!-- 로고 -->
+                    <section>
+                        <a href="#">
+                            <img src="../images/네이버-블로그로고.png" id="home-logo">
+                        </a>
+                    </section>
+                <!-- 검색창 -->
+                    <section>
+                        <form action="#" name="search-form"></form>
+                        <section class="search-area">
+                            <fieldset>    
+                                <input type="search" id="search" name="search" placeholder=" 검색" autocomplete="off">
+                                <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>                     
+                            </fieldset>                    
+                        </section>   
+                        </form>           
+                    </section>
+                <!-- 빈 공간 -->
+                    <section></section>
+                <!-- 로그인 버튼 -->
+                    <section>
+                        <section class="login">
+                        <button id="login-btn" class="fa-regular fa-user">로그인</button>
+                        </section>
+                    </section>
+                <!-- </section> -->
+        </header>
+                <!-- nav -->
+           
+        <section class="nav">
+             <nav>
+                <ul>
+                    <li><a href="#">내 블로그</a></li>
+                    <li><a href="#">이웃 블로그</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">챌린지</a></li>      
+                    <li><a href="#">글쓰기</a></li>      
+                </ul>
+            </nav>
+        </section>    
+ 
+<!-- content -->
+        <section class="content">
+            <section class="content-left">
+                <section class="content-left-profile">
+                    <fieldset>
+                        <section>
+                            <img  id="cat" src="/images/cats/cat1.jpg" width="300px" height="200px">
+                        </section>
+
+                        <section>
+                        <h3>이름 : 안소현</h3>
+                        <p>나이 : 25</p>
+                        <p>전공 : 체육학, 데이터 사이언스</p>
+                        <p>사는 곳 : 서울</p>
+                        <p><a href="https://www.instagram.com/">인스타그램</a></p>
+                        </section>
+                    </fieldset>
+                </section>
+
+                <section class="blog-list">
+                    <fieldset>
+                        <section class="blog-list-title"><h3 id="title">   블로그 목록</h3></section>
+                        <section class="blog-list-content">
+                            <ul>
+                                <li>
+                                    <a href="#">5월 일상</a>
+                                </li>
+                          
+                                <li>
+                                    <a href="#">6월 일상</a>
+                                </li>
+                          
+                                <li>
+                                    <a href="#">7월 일상</a>
+                                </li>
+                          
+                                <li>
+                                    <a href="#">8월 일상</a>
+                                </li>
+                          
+                            </ul>
+                        </section>
+                    </fieldset>
+                </section>
+            </section>
+
+
+            <section class="content-right">
+                <section class="video">
+                    <fieldset>
+                    <legend>오늘의 노래</legend>
+                    <iframe width="670" height="355" src="https://www.youtube.com/embed/LqME1y6Mlyg?si=QuCHsGLJqk8lU_Cb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </fieldset>
+                </section>
+
+
+                <section class="real-content">
+                    <fieldset>
+                        <section>
+                        <h2 id="today">오늘의 하루</h2>
+                        </section>
+
+                        <section class="main-content">
+                            <section class="main-content-top">
+                                <section class="main-t-l">
+
+                                        <fieldset>  
+                                    
+                                            <ul>
+                                                
+                                                <label><li><input type="checkbox">공부하기</li></label>
+                                                <label><li><input type="checkbox">친구만나기</li></label>
+                                                <label><li><input type="checkbox">학원가기</li></label>
+                                                <label><li><input type="checkbox">운동하기</li></label>
+                                                
+                                        
+                                            </ul>
+                                        </fieldset>
+                                 
+                                </section>
+                            <section class="main-t-r">
+                                <fieldset class="main-r-fieldset">
+                                 
+                                        <img src="/images/cats/cat3.jpg" width="460px" height="200px">
+                                    
+                                    <p>오늘은 학원에 갔다. <br>
+                                        html 시험을 봤다</p>
+                                  
+                                </fieldset>   
+                                </section>
+                                
+                            </section>
+
+                           
+
+                        <section class="main-content-bottom">
+
+                            <section class="writer">
+                                <section>
+                                    <button id="writer-btn" class="fa-regular fa-circle-user"></button>
+                                </section>
+            
+                                <section>
+                                    <input id="writer-input" placeholder="댓글 추가...">
+                                </section>
+                        </section>
+                        </section>
+                    </fieldset>
+                </section>
+            </section>
+        </section>
+        
+    </main>
+</body>
+</html>
