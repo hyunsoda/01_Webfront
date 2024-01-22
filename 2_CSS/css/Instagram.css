@@ -19,6 +19,7 @@ nav {
     flex-direction: column;
     border-right: 1px solid black;
     height: 728px;
+    
 }
 
 nav >section:nth-of-type(1){
