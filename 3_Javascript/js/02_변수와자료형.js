@@ -211,8 +211,9 @@ console.log(user.id, user.pw, user.userName)
 // const 변수명 = function() {};
 // (변수명 == 함수명)
 
-const sumFn = function (a,b){return a+b;}; // 익명함수는 단일로 안 씀 (함수를 호출하려면 이름이 있어야 함)
-// 익명함수에 이름을 정의하고 대입해야함
+const sumFn = function (a,b){return a+b;}; 
+// 익명함수는 단일로 안 씀 (함수를 호출하려면 이름이 있어야 함)
+// 익명함수에 이름을 정의하고 대입해야함 -> 이름이 곧 대입된 함수명이다.
 
 // 변수명이면서 대입되는 함수의 함수명이다.
 
