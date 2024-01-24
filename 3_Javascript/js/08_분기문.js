@@ -94,15 +94,15 @@ function startGame(){
 
     while(input !== null){
         input = prompt("숫자를 입력하세요")
-        if(Number(input.value) == randomNumber) {
+         if(Number(input) == randomNumber) {
             alert( "정답입니다"); break;
 
-    } if(Number(input.value) < randomNumber){
-        alert(`Up ${rCount}`); rCount++; continue;
+    } if(Number(input) < randomNumber){
+        alert(`Up ${rCount}`); rCount++; 
 
     }
-        if(Number(input.value) > randomNumber){
-            alert(`DOWN ${rCount}`); rCount++; continue;
+        if(Number(input) > randomNumber){
+            alert(`DOWN ${rCount}`); rCount++; 
         }
 
         if(input === null){
