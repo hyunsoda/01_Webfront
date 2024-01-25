@@ -1,0 +1,14 @@
+#box {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    /* display: flex; */
+    overflow: hidden;
+    
+}
+
+img {
+    height: 50px;
+    width: 50px;
+
+}
