@@ -10,5 +10,5 @@ document.querySelector("#changeButton").addEventListener("click",function(){
         // box index 각각 접근해서 input list i 번째 요소에 value값 적용
         boxList[i].style.backgroundColor = inputList[i].value;
     }
-})
+});
 

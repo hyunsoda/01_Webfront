@@ -118,7 +118,7 @@ test2.addEventListener("click", function(){
     // = test2.innerText = count;
 
 
-})
+});
 
 
 

@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    padding: 0;
+    margin: 0 10px;
+}
+
+main {
+    display: flex;
+}
+
+main > div:first-child{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+
+}
+
+main > div:last-child{
+    height: 1000px;
+    width: 500px;
+}
+/* 화면 */
+.left > div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    flex-basis: 10%;
+    border-bottom: 1px solid black;
+}
+
+.left > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    flex-basis: 80%;
+}
+
+.left > div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    flex-basis: 10%;
+    flex-direction: column;
+}
+
+
+/* keypad */
+#keypad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+ 
+    word-spacing: 1;
+}
+.keypadbtn {
+    border: transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.show > input{
+    border: transparent;
+
+}
+/* 왼쪽 버튼 */
+
+#addnum {
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#resetnum {
+    border: 2px solid purple;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* 오른쪽 */
+.right > fieldset{
+    border: transparent;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
