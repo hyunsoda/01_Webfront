@@ -18,9 +18,10 @@ const key_ = document.getElementById("key#");
 const key0 = document.getElementById("key0");
 const keyq = document.getElementById("key*");
 
-keypadbtn.addEventListener("click",()=> {
+// keypadbtn.addEventListener("click",()=> {
 
     let key="";
+  
 
     key1.addEventListener("click",()=> {
         
@@ -50,31 +51,55 @@ keypadbtn.addEventListener("click",()=> {
     });
     key5.addEventListener("click",()=> {
         
+        key += key5.value;
+
+        keyshow.innerText = key;
+    });
+    key6.addEventListener("click",()=> {
+        
         key += key6.value;
 
         keyshow.innerText = key;
     });
-    // key6.addEventListener("click",()=> {
+    key7.addEventListener("click",()=> {
         
-    //     key += key3.value;
+        key += key7.value;
 
-    //     keyshow.innerText = key;
-    // });
-    // key3.addEventListener("click",()=> {
+        keyshow.innerText = key;
+    });
+
+    key8.addEventListener("click",()=> {
         
-    //     key += key3.value;
+        key += key8.value;
 
-    //     keyshow.innerText = key;
-    // });
-    // key3.addEventListener("click",()=> {
+        keyshow.innerText = key;
+    });
+    key9.addEventListener("click",()=> {
         
-    //     key += key3.value;
+        key += key9.value;
 
-    //     keyshow.innerText = key;
-    // });
+        keyshow.innerText = key;
+    });
+    key0.addEventListener("click",()=> {
+        
+        key += key0.value;
 
+        keyshow.innerText = key;
+    });
+    key_.addEventListener("click",()=> {
+        
+        key += key_.value;
 
-});
+        keyshow.innerText = key;
+    });
+    keyq.addEventListener("click",()=> {
+        
+        key += keyq.value;
+
+        keyshow.innerText = key;
+    });
+    
+
 
 //=================
 
@@ -121,3 +146,25 @@ keypadbtn.addEventListener("click",()=> {
 // };
 
 // keypadbtn.addEventListener("click",fnKeyPadBtn);
+
+
+addbtn.addEventListener("click",()=>{
+    
+    numlist.innerHTML +=`<li>${key}</li>`;
+    key = "";
+
+if(span.value.trim().length ==0){
+    // 적은 값의 양 옆 공백을 제외하고 길이가 0
+    alert("채팅 내용을 입력해주세요");
+    
+    span.value=""; // 이전 input에 작성된 값 삭제
+
+    return; // 현재 수행중인 함수 종료 + 호출한 곳으로 돌아감
+
+}
+});
+
+
+resetbtn.addEventListener("click",() => {
+    span.value="";
+});
