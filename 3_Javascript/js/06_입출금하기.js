@@ -73,7 +73,7 @@ function deposit() {
 //예시 답안
 function withdrawal() {
  
-    if(amount,value.length ==0){
+    if(amount.value.length ==0){
         alert("금액을 입력해주세요")
     }else {
            const password = prompt("비밀번호를 입력하세요");
