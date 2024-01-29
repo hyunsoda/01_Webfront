@@ -11,7 +11,7 @@ for(let i=0; i<numberbtn.length-1;i++){
         
        numberbtn[i].addEventListener("click",() =>{
         numberbtn[i] = i+1;
-        str+=i+1;
+        str+=(i+1);
         result.innerText=str;
     console.log(numberbtn);
        });
@@ -24,14 +24,19 @@ for(let i=0; i<numberbtn.length-1;i++){
         result.innerText=str;
        });
 
-   if(str.value.length == 11){
+
+
+   if(str.length >= 11){
     alert("10자까지만 입력해주세요");
-    result.value="";
+    result.innerText="";
     // return;
    };
     
-   reset.addEventListener("click",()=>{
-    reset.value="";
+    reset.addEventListener("click",()=>{
+    result.innerText="";
+    str="";
+    return;
+    
    });
 
 
