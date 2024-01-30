@@ -144,14 +144,17 @@ document.getElementById("inputPno").addEventListener("keyup",(e)=> {
 
 
 // 회원가입창 만들기
+const regExp1 =/^[a-z]{1}\w{5,13}$/;
+const regExp2 = /^[ㄱ-힣]{2,5}/;
+ const regExp3 = /^[0][0-9]{1,2}-[0-9]{3,4}-[0-9]{4}/;
 document.getElementById("idInput").addEventListener("keyup",(e) => {
-    const regExp =/^[a-z]{1}\w{5,13}$/;
+    
 
     if(e.target.value.length==0){
         e.target.style.backgroundColor="white";
         return;
     }
-    if(regExp.test(e.target.value)){
+    if(regExp1.test(e.target.value)){
         e.target.style.backgroundColor ="springgreen";
     } else{
         e.target.style.backgroundColor = "white";
@@ -183,12 +186,12 @@ document.getElementById("pwdInput").addEventListener("keyup",(e)=> {
 
 document.getElementById("nameInput").addEventListener("keydown",(e)=> {
     const span = document.getElementById("namespan");
-    const regExp = /^[ㄱ-힣]{2,5}/;
+    
 
     if(e.target.value.length == 0){
         span.innerText="";
     }
-    if(regExp.test(e.target.value)){
+    if(regExp2.test(e.target.value)){
         span.innerText="정상입력";
         span.style.color="green";
     }
@@ -199,7 +202,7 @@ document.getElementById("nameInput").addEventListener("keydown",(e)=> {
 });
 
 document.getElementById("submit").addEventListener("click",(e)=>{
-    const regExp = /^[0][0-9]{1,2}-[0-9]{3,4}-[0-9]{4}/;
+   
     const phone = document.getElementById("phonenumInput");
     
     const sex = document.getElementsByName("sex");
@@ -211,17 +214,26 @@ document.getElementById("submit").addEventListener("click",(e)=>{
             sexv = sex[i].value;
         }
     };
+    if (sexv== null){
+        alert("성별을 입력하세요");
+        return;
+    }
 
     // if(sexv.value.length == 0){
     //     alert("성별을 입력하세요");
     //     return;
     // }
 
-    if(phone.value.length ==0 ){
+    if(regExp3.test !=(Number(phone.value))){
         alert("전화번호의 형식이 올바르지 않습니다");
         return;
         
     }
 
+
+    if(regExp1.test(inputPno.value)&&pwdInput.value == pwdInput2.value
+    &&regExp2.test(nameInput.value)&&sexv!== null &&regExp3.test(Number(phone.value))){
+        alert("회원가입 완료!");
+    }
 });
 
