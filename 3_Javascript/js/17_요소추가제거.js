@@ -149,7 +149,7 @@ calc.addEventListener("click", () => {
 
 //     for(let i = 0; i <numbers.length; i++){
 //         sum += Number(numbers[i].value);
-//     }
+//     };
 
 //     // 3. for문 끝나면 alert로 결과 출력
 //     alert(`결과 : ${sum}`);
@@ -159,7 +159,7 @@ calc.addEventListener("click", () => {
 
 
 
-// })
+// });
 
 
 

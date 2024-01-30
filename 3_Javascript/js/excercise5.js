@@ -8,13 +8,15 @@ const color = document.getElementById("color");
 document.getElementById("registration").addEventListener("click", (e)=>{
     
     const span = document.createElement("span");
-    // span.innerText = document.getElementById("content").value;
+    console.log(span);
+    span.innerText = document.getElementById("content").value;
+    result.append(span);
 
-
-
-    // document.getElementById("apply").addEventListener("click", ()=>{
-
-    // });
+    document.getElementById("apply").addEventListener("click",()=>{
+        span.style.fontSize = Number(size.value)+ 'px';
+        span.style.color = color.value;
+    });
+ 
 });
 
 

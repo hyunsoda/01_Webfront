@@ -1,5 +1,5 @@
 // window.setTimeout()
-// 버튼 클릭하면 3초 후에 alert창 키우기
+// 버튼 클릭하면 3초 후에 alert창 띄우기
 document.getElementById("btn1").addEventListener("click",()=>{
     
     setTimeout(function(){ // 함수라 호출부 써줘야 한다 
