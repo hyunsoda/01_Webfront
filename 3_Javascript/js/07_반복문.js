@@ -241,6 +241,13 @@ function check16() {
 }
 
 
+    let i = true
+    while(i){
+        console.log(i);
+        i= false // 탈출 조건 넣어주기
+    }
+
+
 
 // 메뉴 주문하기
 

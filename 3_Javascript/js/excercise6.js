@@ -1,23 +1,220 @@
-const cart = document.getElementById("cart");
-const total = document.getElementById("total");
-const empty = document.querySelector("#empty-cart");
-const menuitem = document.querySelectorAll(".menu-item");
-const divs = document.querySelectorAll("section>div");
+// const cart = document.getElementById("cart");
+// const total = document.getElementById("total");
+// const empty = document.querySelector("#empty-cart");
+// const menuitem = document.querySelectorAll(".menu-item");
+// const cartitem = document.querySelectorAll(".cart-item");
+// const footer = document.querySelector("footer");
 
-
-function addToCart(item,price){
-    const menuitem = document.querySelectorAll(".menu-item");   
-    empty.remove();
-    // document.querySelector("footer>div").id="cart";
-    for(let i = 0; i < divs.length;i++){
+// function addToCart(item,price){
+//     const menuitem = document.querySelectorAll(".menu-item");   
+//     const cartitem = document.querySelectorAll(".cart-item");
+//     const cart = document.getElementById("cart");
     
-        switch(item){
-        case '김밥' : cart.innerHTML=menuitem[0];break;
+//         cart.style.display = 'block';
+//         empty.style.display = 'none';
+    
+    
+//             const box = document.createElement("div");
+          
+//             box.classList.add("cart-item");
+            
+//             const span1 = document.createElement("span");
+//             span1.innerHTML=`${item}`;
+//             box.append(span1);
+
+//             const span2 = document.createElement("span");
+//             const span2div = document.createElement("div");
+//             const quantitybtn1 = document.createElement("button");
+
+//             const quantitybtn2 = document.createElement("button");
+//             const innerspan = document.createElement("span");
+//             quantitybtn2.innerHTML="+"
+//             quantitybtn1.innerHTML="-"
+//             span2.classList.add("quantity");
+//             span2.append(span2div);
+//             span2div.append(quantitybtn1);
+//             span2div.append(innerspan);
+//             span2div.append(quantitybtn2);
+//             box.append(span2);
+            
+//             const span3 = document.createElement("span");
+//             span3.classList.add("delete-button");
+//             span3.innerHTML=("&times;");
+//             box.append(span3);
+            
+//         console.log(box);
+
+   
+
+
+
+
+
+//     // 항목 없애기 
+//             span3.addEventListener("click",(e)=>{
+//                const parent = e.target.parentElement; 
+//                parent.remove()
+//             })
+
+
+//             // box[i]=i+1;
+//             switch(item){
+//                 case '김밥' : cart.append(box); break;
+//                 case '라면' : cart.append(box); break;
+//                 case '튀김' : cart.append(box); break;
+//                 case '떡볶이' :cart.append(box); break;
+//                 case '돈까스' : cart.append(box); break;
+//                 case '우동' : cart.append(box); break;
+//                 case null: empty.style.display = 'block';
+//                       cart.style.display = 'none'; break;
+//             }   
+
+
+ 
+
+//         let acount = 0;
+//         let bcount = 0;
+//         let ccount = 0;
+//         let dcount = 0;
+//         let ecount = 0;
+//         let fcount = 0;
+
+//         const a = 3000;
+//         const b = 4500;
+//         const c = 5000;
+//         const d = 6000;
+//         const e = 7500;
+//         const f = 5000;
         
+//             switch(item){
+                
+//                 case '김밥' : acount++ ; break;
+//                 case '라면' : bcount++ ; break;
+//                 case '튀김' : ccount++; break;
+//                 case '떡볶이' : dcount++ ; break;
+//                 case '돈까스' : ecount++; break;
+//                 case '우동' : fcount++; break;
+                
+          
+//             }   
 
-    };
-console.log(divs);
+//         // total.innerHTML =`합계 : ₩${acount*3000+bcount*4500+ccount*5000
+//         //                            +dcount*6000+ ecount*7500+fcount*5000}`
 
-    }
+      
+//  let tprice = (a*acount) + (b*bcount) + (c*ccount) + (d*dcount) + (e*ecount) + (f*fcount); 
+      
+
+
+//             // switch(item){
+                
+//             //     case '김밥' : tprice+=3000 ; break;
+//             //     case '라면' : tprice+=4500 ; break;
+//             //     case '튀김' : tprice+=5000; break;
+//             //     case '떡볶이' : tprice+=6000 ; break;
+//             //     case '돈까스' : tprice+=7500; break;
+//             //     case '우동' : tprice+=5000; break;
+   
+//             // }   
+//         total.innerHTML =`합계 : ₩${tprice}`
+      
+           
+      
+         
+//     span3.addEventListener("click",()=>{
+//         switch(item){
+//             case '김밥' : tprice-=3000; break;
+//             case '라면' : bcount-- ; break;
+//             case '튀김' : ccount--; break;
+//             case '떡볶이' : dcount-- ; break;
+//             case '돈까스' : ecount--; break;
+//             case '우동' : fcount--; break;
+         
+           
+//         }   
+       
+
+//         total.innerHTML =`합계 : ₩${tprice}`
+   
+
+//     });
+//         //     case '김밥' : tprice-=3000 ; break;
+//         //     case '라면' : tprice-=4500 ; break;
+//         //     case '튀김' : tprice-=5000; break;
+//         //     case '떡볶이' : tprice-=6000; break;
+//         //     case '돈까스' : tprice-=7500; break;
+//         //     case '우동' : tprice-=5000; break;
+            
+
+  
+// //   console.log(box[i]);
+
+//   // plus 버튼
+
+//   let add = 1;
+//   innerspan.innerHTML=`${add}`
+//   console.log(box);
+//     if(quantitybtn1 = "click"){
+//         add--;
+//     } if(quantitybtn2 = "click"){
+//         add++;
+//     } 
+ 
+
+
+
+// };
+
+// 예시 답안
+
+const cart = document.getElementById('cart');
+const totalElement = document.getElementById('total');
+const emptyCartDiv = document.getElementById('empty-cart');
+let total = 0;
+
+// 장바구니 메뉴 요소 생성 함수
+function createCartItemElement(item, price) {
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
+    cartItem.setAttribute('data-item', item);
+    cartItem.setAttribute('data-price',price);
+
+    const itemName = document.createElement('span');
+    itemName.innerText = item;
+
+    const quantityContainer = document.createElement('div');
+    quantityContainer.classList.add('quantity');
+
+    const decreaseButton = document.createElement("button");
+    decreaseButton.innerText = '-';
+    decreaseButton.onclick = function(){
+        decreaseQuantity(decreaseButton); };
     
+    const quantitySpan = document.createElement('span');
+    quantitySpan.innerText = '1';
+
+    const increaseButton = document.createElement('button');
+    increaseButton.innerText = '+';
+    increaseButton.onclick = function(){
+        increasQuantity(increaseButton); };
+    
+    const deleteButton = document.createElement ('span');
+    deleteButton.classList.add('delete-button');
+    deleteButton.innerText = 'X';
+    deleteButton.onclick = function(){
+        deleteItem(deleteButton); };
+
+    quantityContainer.appendChild(decreaseButton);
+    quantityContainer.appendChild(increaseButton);
+    quantityContainer.appendChild(deleteButton);
 };
+
+
+
+
+
+
+
+
+
+
