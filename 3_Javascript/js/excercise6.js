@@ -207,8 +207,32 @@ function createCartItemElement(item, price) {
     quantityContainer.appendChild(decreaseButton);
     quantityContainer.appendChild(increaseButton);
     quantityContainer.appendChild(deleteButton);
-};
 
+    cartItem.appendChild(itemName);
+    cartItem.appendChild(quantityContainer);
+    cartItem.appendChild(deleteButton);
+
+    return cartItem;
+
+}
+// 메뉴 선택 시 장바구니 함수
+    function addToCart(item,price){
+        const cartItems = document.getElementsByClassName('cart-item');
+        let existingItem = null;
+
+        // 검사해서 이미 장바구니에 존재하는지 확인
+        for (const cartItem of cartItems){
+            if(cartItem.getAttribute('data-item')===item){
+                existingItem = cartItem;
+                break;
+            }
+        }
+
+
+
+
+
+    }
 
 
 
