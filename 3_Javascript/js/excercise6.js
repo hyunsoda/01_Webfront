@@ -227,10 +227,77 @@ function createCartItemElement(item, price) {
                 break;
             }
         }
+        // 장바구니에 아이템이 이미 있는 경우
+        if (existingItem){
+            const quantityElement = existingItem.querySelector('.quantity span');
+            const quantity = parseInt(quantityElement.innerText, 10)+1;
+            quantityElement.innerText= quantity;
+        }else{
+            // 장바구니에 아이템이 없는 경우 
+            const cartItem = createCartItemElement(item,price);
+            cart.appendChild(cartItem);
+        
+        // 합계 갱신
+        total += price;
+        totalElement.innerText = ` 합계 : ₩${total.toLocaleString()}`
 
+        // 장바구니가 비어 있습니다 문구 감춤
+        emptyCartDiv.style.display = 'none';
+        cart.style.display = 'block'
+        }
 
+        // 메뉴 개수 증가버튼 함수
+        function increaseQuantity(button){
+            const quantityElement = button.parentElement.querySelector('span');
+            const quantity = parseInt(quantityElement.innerText, 10)+1;
+            quantityElement.innerText = quantity;
+            updateTotal();
+        }
+        // 메뉴 개수 감소버튼 함수
+        function decreaseQuantity(button){
+            const quantityElement = button.parentElement.querySelector('span');
+            let quantity=parseInt(quantityElement.innerText,10)-1;
+            quantity = Math.max(1,quantity);
+            //최소값은 1로 유지
+            quantityElement.innerText = quantity;
+            updateTotal();
+        }
+        // 장바구니 메뉴 삭제 함수
+        function deleteItem(button){
+            const cartItem = button.parentElement;
+            const price = pareInt(cartItem.dataset.price,10);
+            const quantity = pareInt(cartItem.querySelector('.quantityspan').innerText,10);
 
+            // 합계에서 해당 아이템 가격 차감
+            total -= price *quantity;
 
+            //합계 갱신
+            totalElement.innerText=`합계 : ₩${total.toLocaleString()} `;
+            cartItem.remove();
+
+            // 장바구니가 비어 있습니다. 문구 갱신
+            if(cart.children.length ===0) {
+                emptyCartDiv.style.display = 'block';
+                cart.style.display = 'none';
+            }
+        }
+        // 장바구니에 담긴 메뉴 합계 업데이트 함수
+        function updateTotal(){
+            total = 0;
+            const cartItems = document.getElementsByClassName('cart-item');
+            for (const cartItem of cartItems){
+                const price = parseInt(cartItem.dataset.price,10);
+                const quantity = parseInt(cartItem.querySelector('.quantityspan').innerText,10);
+                total += price * quantity;
+            }
+            totalElement.innerText=`합계 :₩${total.toLocaleString()}`;
+
+            // 장바구니가 비어 있습니다. 문구 갱신
+            if(cart.children.length ===0){
+                emptyCartDiv.style.display = 'block';
+                cart.style.display = 'none'
+            }
+         }
 
     }
 
